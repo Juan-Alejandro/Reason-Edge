@@ -442,6 +442,11 @@ html, body {
     width: 15%;
 }
 
+/*PAGINAS EXTERNAS A LA PRINCIPAL*/
+
+/*VISION*/
+
+
 @media(max-width:600px) {
     .header-icono-menu {
         display: flex;
@@ -631,5 +636,27 @@ html, body {
     .footer-socialmedia img {
         width: 50%;
     }
+
+
+    /*PAGINAS EXTERNAS A LA PRINCIPAL*/
+}
+
+
+@media(min-width:601px) and (max-width:1024px){
+    
+    .sub-header-container {
+        width: 98%;
+    }
+    .sub-header-container ol {
+        gap: 2%;
+        margin: 0% 2% 0% 2%;
+        
+    }
+
+    .sub-header-container ol li a {
+        font-size: 18px;
+    }
+
+    
 }
 
