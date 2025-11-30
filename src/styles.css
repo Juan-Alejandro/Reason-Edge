@@ -1,12 +1,385 @@
-* {
-    padding: 0;
-    margin: 0;
+/*Fuentes*/
+@font-face {
+    font-family: "GoldmanB";
+    src: url(../fuentes/Goldman-Bold.ttf);
 }
+
+@font-face {
+    font-family: "GoldmanR";
+    src: url(../fuentes/Goldman-Regular.ttf);
+}
+@font-face {
+    font-family: "Voces";
+    src: url(../fuentes/Voces-Regular.ttf);
+}
+@font-face {
+    font-family: "knewave";
+    src: url(../fuentes/Knewave-Regular.ttf);
+}
+
+
+/*Clases generales*/
+
+.p-header-letters {
+    font-family: "GoldmanR";
+    font-size: 30px;
+    margin-bottom: 5%;
+    padding-left: 2%;
+}
+
+a {
+    color: rgb(106, 70, 239);
+    font-family: "knewave";
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 2%;
+    text-decoration: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*CABECERA*/
 .div-header-container {
+    background-color:rgb(0, 0, 0);
+    display: flex;
     height: auto;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /*position: fixed;*/
+    width: 100%;
+
+}
+.sub-header-container {
+    background: rgb(255, 255, 255);
+    padding: 1%;
+    width: 90%;
+}
+
+.sub-header-container ol {
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    list-style: none;
+    margin: 0% 2% 0% 2%;
+    width: auto;
+    
+}
+
+.sub-header-container ol li {
+    
+    flex-direction: row;
+    margin-top: .5%;
+    margin-bottom: .5%;
+
+}
+
+.sub-header-container ol li a {
+    color: rgb(0, 0, 0);
+    font-family: "GoldmanB";
+    font-size: 25px;
+    text-decoration: none;    
+}
+    
+/*DESCRIPCION*/
+
+
+
+.div-image-enterprise {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    /*padding-top: 8%;*/
+    width: 100%;
+}
+
+.div-image-enterprise img {
+    flex-wrap: wrap;
+    margin: 5%;
+    padding-left: 2%;
+    width: 40%;
+    
+
+}
+
+.div-text-descripcion{
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    padding: 5%;
+    
+}
+
+.p-description {
+    font-family: "Voces";
+    font-size: 20px;
+    padding: 2%;
+    text-align: justify;
+}
+
+
+
+/*Mision*/
+
+.div-text-mision-containers {
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: 7% 0 7% 0;
+}
+/*Colocarle un estilo de degradado de animacion al ojo*/
+.diamante-mision {
+    text-align: center;
+    font-size: 400px;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    width: 50%;
+}
+
+.div-text-mision {
+    flex-wrap: wrap;
+    padding-left: 5%;
+    width: 50%;
+}
+
+.p-mision {
+    font-family: "Voces";
+    font-size: 20px;
+    padding: 2% 2% 5% 2%;
+    text-align: justify;
+}
+
+
+/* VISION*/
+.div-text-vision-containers {
+    background-color: rgb(18, 16, 16);
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: 7% 0 7% 0;
+}
+
+.div-text-vision {
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.ojo-vision {
+    text-align: center;
+    font-size: 400px;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    width: 50%;
+}
+
+.div-text-vision strong {
+    color: red;
+    padding-left: 2%;
+
+}
+.p-visions {
+     font-family: "Voces";
+    font-size: 20px;
+    padding: 5% 10% 5% 2%;
+    text-align: justify;
+}
+
+.p-strong {
+    font-weight: 600;
+}
+
+
+
+/*OBJETIVOS*/
+.div-text-objetivos-container {
+    background-color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
+    padding: 7% 0 7% 0;
+}
+.div-text-objetivos {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.div-text-objetivos ol  {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    list-style: none;
+}
+
+.div-text-objetivos ol li {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*.div-text-objetivos ol li:hover {
+    color: rgb(106, 70, 239);
+}*/
+
+.div-text-objetivos ol li p {
+    font-size: 30px;
+    font-family:"Voces";
+}
+
+.iconos-objetivos {
+    margin-top: 10%;
+    font-size: 120px;
+}
+
+/*Valores*/
+.div-text-valores-container {
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+    padding: 7% 0 7% 0;
+}
+
+.div-text-valores {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.div-text-valores ol {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.div-text-valores ol li {
+    font-family:"Voces";
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 33%;
+}
+
+.div-text-valores ol li p {
+    font-size: 25px;
+    font-family:"Voces";
+}
+
+.iconos-valores {
+    font-size: 120px;
+    margin-top: 10%;
+
+}
+
+.div-text-valores-container a {
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+/*POLITICAS*/
+.div-text-politicas-container {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 7% 0 7% 0;
+}
+
+.div-text-politicas {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.div-text-politicas ol {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.div-text-politicas ol li {
+    font-family:"Voces";
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 33%;
+}
+
+.div-text-politicas ol li p {
+    font-size: 25px;
+    font-family:"Voces";
+}
+
+.iconos-politicas {
+    font-size: 120px;
+    margin-top: 10%;
+}
+
+.div-class-studio-stats {
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    padding: 0% 0 2% 0;
+}
+
+.div-class-studio-stats ol {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.div-class-studio-stats ol li {
+    font-family:"Voces";
+    flex-wrap: wrap;
+    margin: 2% 2% 0 2%;
+    position:relative;
+    width: 25%;
+    z-index: 2;
+
+}
+
+.div-class-studio-stats ol li p:not(.p-header-stats,.p-numero-stats) {
+    font-size: 15px;
+    font-family:"knewave";
+    width: 80%;
+    text-align: center;
+
+}
+
+.p-header-stats {
+    font-family: "Voces";
+    font-size: 30px;
+    width: 50%;
+}
+
+.p-numero-stats {
+    color: yellow;
+    font-size: 50px;
+    font-family: "GoldmanB";
+    text-align: center;
+}
+
+.studio-icons {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 100px;
+    position: absolute;
+    vertical-align: middle;  
+    left: 20%;
+    z-index: -1;
+    
+}
+
+.div-footer-rights-socialmedia {
+    background-color: rgb(26, 26, 26);
     display: flex;
     width: 100%;
 }
-.sub-header-container {
 
+.div-footer-rights-socialmedia div {
+    flex-wrap: wrap;
+    width: 50%;
 }
+
+.footer-rights {
+    color: rgb(104, 104, 104);
+    font-family: "Voces";
+    padding: 3% 5% 1% 5%;
+}
+
+.footer-socialmedia {
+    text-align: end;
+    padding: 1% 10% 0 0;
+}
+.footer-socialmedia img {
+    width: 15%;
+}
+
