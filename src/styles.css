@@ -36,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: rgb(89, 58, 198);
+}
+
 
 * {
     margin: 0;
@@ -103,6 +107,9 @@ html, body {
     text-decoration: none;    
 }
     
+.sub-header-container ol li:hover a {
+    color: rgb(0, 0, 255);
+}
 
 
 /*DESCRIPCION*/
@@ -154,8 +161,28 @@ html, body {
     text-align: center;
     font-size: 400px;
     flex-wrap: wrap;
-    color: rgb(255, 255, 255);
+    animation: cambio-de-color 10s infinite ease;
+
     width: 50%;
+
+}
+
+@keyframes cambio-de-color {
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    25% {
+        color: rgb(106, 70, 239);
+    }
+    50% {
+        color:rgb(0, 0, 255);
+    }
+    75% {
+        color: rgb(106, 70, 239);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
 }
 
 .div-text-mision {
@@ -186,10 +213,10 @@ html, body {
 }
 
 .ojo-vision {
-    text-align: center;
+    animation: cambio-de-color 10s infinite ease;
     font-size: 400px;
     flex-wrap: wrap;
-    color: rgb(255, 255, 255);
+    text-align: center;
     width: 50%;
 }
 
@@ -239,10 +266,22 @@ html, body {
 }
 
 .iconos-objetivos {
+    animation: cambio-de-color-1 10s infinite ease;
     margin-top: 10%;
     font-size: 120px;
 }
 
+@keyframes cambio-de-color-1 {
+    0% {
+        color: rgb(255, 255, 132);
+    }
+    50% {
+        color: rgb(255, 255, 0);
+    }
+    100% {
+         color: rgb(255, 255, 132);
+    }
+}
 /*Valores*/
 .div-text-valores-container {
     background-color: rgb(27, 27, 27);
@@ -274,6 +313,7 @@ html, body {
 }
 
 .iconos-valores {
+    animation: cambio-de-color 10s infinite ease;
     font-size: 120px;
     margin-top: 10%;
 
@@ -315,6 +355,7 @@ html, body {
 }
 
 .iconos-politicas {
+    animation: cambio-de-color-1 10s infinite ease;
     font-size: 120px;
     margin-top: 10%;
 }
