@@ -452,9 +452,199 @@ html, body {
 }
 
 /*PAGINAS EXTERNAS A LA PRINCIPAL*/
+.header-others-page {
+    animation: cambio-color-oscuros-header 5s ease;
+    height: 5vh;
+    width: 100%;
+}
+@keyframes cambio-color-oscuros-header {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+    25% {
+         background-color: rgb(18, 16, 16);
+    }
+    50% {
+        background-color: rgb(196, 194, 194);
+    }
+    75% {
+        background-color: rgb(18, 16, 16);
+    }
+    100% {
+        background-color: rgb(0, 0, 0);
+    }
+}
+/*MISION*/
+.div-mision-page {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.div-mision-page img,div {
+    align-items: center;
+    width: 50%;
+
+}
+
+.div-mision-page div {
+    
+    color: rgb(255, 255, 255);
+    font-family: "Voces";
+    font-size: 20px;
+    padding: 5%;
+
+    
+}
 
 /*VISION*/
 
+.div-vision-page {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    width: 100%;
+}
+.div-vision-page img,div {
+    align-items: center;
+    width: 50%;
+}
+
+.div-vision-page div {
+    color: rgb(255, 255, 255);
+    font-family: "Voces";
+    font-size: 20px;
+    padding: 5%;
+}
+
+.div-objetivos-page {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    width: 100%;
+}
+
+.div-objetivos-page div {
+    color: rgb(255, 255, 255);
+    padding: 0 5% 0 5%;
+    width: 100%;
+
+}
+
+.p-sub-header-letters {
+    font-family: "GoldmanB";
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.div-objetivos-page div ol {
+    display: flex;
+    gap: 10%;
+    flex-direction: row;
+    font-family: "Voces";
+    list-style: none;
+}
+.div-objetivos-page div ol li {
+    text-align: center;
+    width: 33%;
+    
+}
+.div-objetivos-page div ol li p{
+    font-size: 20px;
+    text-align: justify; 
+    margin-bottom: 10%; 
+}
+
+.icono-page-objetivo {
+    font-size: 100px;
+    margin-top: 10%;
+}
+
+.div-valores-page {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+.div-valores-page div {
+    color: rgb(255, 255, 255);
+    padding: 0 2% 0 2%;
+    width: 100%;
+
+}
+
+
+.div-valores-page div ol {
+    display: flex;
+    gap:2%;
+    flex-direction: row;
+    font-family: "Voces";
+    list-style: none;
+}
+.div-valores-page div ol li {
+    transition: background-color 1s ease;
+    transition: color 1s ease-out;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 20%;
+}
+
+.div-valores-page div ol li:hover {
+    background-color: rgb(196, 194, 194);
+    color: black;
+}
+
+.div-valores-page div ol li p{
+    font-size: 20px;
+    text-align: justify; 
+    margin-bottom: 10%; 
+}
+
+.div-garantia-page {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    padding: 5%;
+    width: 100%;
+}
+
+
+.ol-primer-organizador {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 40px; 
+}
+
+.p-contenedor-listas-ul {
+    width: 100%;
+    font-family: "Voces"; 
+}
+
+.p-contenedor-listas-ul ol {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%; 
+    list-style: none;
+    padding-top: 20px;
+}
+
+.p-contenedor-listas-ul ol li {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 2%;
+    text-align: justify;
+}
 
 @media(max-width:600px) {
     .header-icono-menu {
@@ -648,6 +838,12 @@ html, body {
 
 
     /*PAGINAS EXTERNAS A LA PRINCIPAL*/
+    .p-contenedor-listas-ul ol {
+        flex-direction: column;
+    }
+    .p-contenedor-listas-ul ol li {
+        width: 100%;
+    }
 }
 
 
