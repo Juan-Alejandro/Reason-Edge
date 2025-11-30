@@ -2,49 +2,52 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./src/styles.css" rel="stylesheet">
         <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
-        
     </head>
     <body>
         <div class="div-header-container">
             
             <div class="sub-header-container">
-                <ol>
+                <button class="header-icono-menu">
+                    &#9776; 
+                </button>
+                <ol class="header-lista-menu">
                     <li>
-                        <a href="#">
+                        <a href="#bienvenida">
                             Bienvenida
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#mision">
                             Misión
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#vision">
                             Visión
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#objetivos">
                             Objetivos
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#valores">
                             Valores
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#politicas">
                             Politicas
                         </a>
                     </li>
                 </ol>
             </div>
         </div>
-        <div class="div-image-enterprise">
+        <div class="div-image-enterprise" id="bienvenida">
             <img src="./imagenes/RE-logo-fondonegro.png">
             <div class="div-text-descripcion">
                 <p class="p-header-letters">
@@ -65,7 +68,7 @@
                 </p class="p-description">
             </div>
         </div>
-        <div class="div-text-mision-containers">
+        <div class="div-text-mision-containers" id="mision">
             <div class="div-text-mision">
                 <p class="p-header-letters">
                     Nuestra Misión:
@@ -91,7 +94,7 @@
             </div>
             <i class='bx  bxs-diamonds diamante-mision'></i> 
         </div>
-        <div class="div-text-vision-containers">
+        <div class="div-text-vision-containers" id="vision">
             <i class='bx  bx-eye-alt ojo-vision'></i> 
             <div class="div-text-vision">
                 <p class="p-header-letters">
@@ -110,7 +113,7 @@
                 </a>
             </div>
         </div>
-        <div class="div-text-objetivos-container">
+        <div class="div-text-objetivos-container" id="objetivos">
             <div class="div-text-objetivos">
                 <p class="p-header-letters">
                     Nuestros objetivos:
@@ -140,7 +143,7 @@
                 Conoce mas acerca de nuestros objetivos....
             </a>
         </div>
-        <div class="div-text-valores-container">
+        <div class="div-text-valores-container" id="valores">
             <div class="div-text-valores">
                 <p class="p-header-letters">
                     Nuestros valores corporativos:
@@ -190,7 +193,7 @@
                 Conoce mas acerca de nuestros valores.....
             </a>
         </div>
-        <div class="div-text-politicas-container">
+        <div class="div-text-politicas-container" id="politicas">
             <div class="div-text-politicas">
                 <p class="p-header-letters">
                     Garantia del servicio
@@ -278,4 +281,5 @@
             </div>
         </div>
     </body>
+    <script src="./src/functions.js"></script>
 </html>
