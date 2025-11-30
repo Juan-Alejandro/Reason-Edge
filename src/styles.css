@@ -164,6 +164,8 @@ html, body {
     color: rgb(255, 255, 255);
     display: flex;
     padding: 7% 0 7% 0;
+    align-items:start;
+
 }
 /*Colocarle un estilo de degradado de animacion al ojo*/
 .diamante-mision {
@@ -172,7 +174,7 @@ html, body {
     flex-wrap: wrap;
     animation: cambio-de-color 10s infinite ease;
 
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -226,7 +228,7 @@ html, body {
     font-size: 400px;
     flex-wrap: wrap;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
 .p-visions {
@@ -451,9 +453,7 @@ html, body {
     width: 15%;
 }
 
-/*PAGINAS EXTERNAS A LA PRINCIPAL*/
 
-/*VISION*/
 
 
 @media(max-width:600px) {
@@ -646,8 +646,6 @@ html, body {
         width: 50%;
     }
 
-
-    /*PAGINAS EXTERNAS A LA PRINCIPAL*/
 }
 
 
@@ -661,7 +659,6 @@ html, body {
         margin: 0% 2% 0% 2%;
         
     }
-
     .sub-header-container ol li a {
         font-size: 18px;
     }

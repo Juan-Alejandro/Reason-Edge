@@ -1,0 +1,252 @@
+/* =========================================
+   1. FUENTES (Tal cual tu referencia)
+   ========================================= */
+@font-face {
+    font-family: "GoldmanB";
+    src: url(../fuentes/Goldman-Bold.ttf);
+}
+@font-face {
+    font-family: "GoldmanR";
+    src: url(../fuentes/Goldman-Regular.ttf);
+}
+@font-face {
+    font-family: "Voces";
+    src: url(../fuentes/Voces-Regular.ttf);
+}
+@font-face {
+    font-family: "knewave";
+    src: url(../fuentes/Knewave-Regular.ttf);
+}
+@font-face {
+    font-family: "Ephesis";
+    src: url(../fuentes/Ephesis-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
+    font-family: "Voces";
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.p-header-letters {
+    font-family: "GoldmanR";
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.p-sub-header-letters {
+    font-family: "GoldmanB";
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bx {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    animation: cambio-de-color 10s infinite ease;
+}
+
+@keyframes cambio-de-color {
+    0%{ 
+        color: rgb(255, 255, 255); 
+    }
+    25% { 
+        color: rgb(106, 70, 239); 
+    }
+    50% { 
+        color: rgb(0, 0, 255); 
+    }
+    75% { 
+        color: rgb(106, 70, 239); 
+    }
+    100% { 
+        color: rgb(255, 255, 255); 
+    }
+}
+
+.header-others-page {
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.div-mision-page {
+    background-color: rgb(26, 26, 26);
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.div-mision-page img {
+    width: 40%;
+    box-shadow: 0 0 15px rgba(106, 70, 239, 0.3);
+}
+
+.div-mision-page div {
+    width: 55%;
+}
+
+.div-vision-page {
+    background-color: rgb(18, 16, 16);
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.div-vision-page div {
+    width: 55%;
+}
+
+.div-vision-page img {
+    width: 40%;
+}
+
+.div-objetivos-page, 
+.div-valores-page {
+    background-color: rgb(3, 3, 3);
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.div-objetivos-page ol, 
+.div-valores-page ol {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+.div-objetivos-page li,
+.div-valores-page li {
+    padding: 30px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+
+
+.div-garantia-page {
+    background-color: rgb(0, 0, 0);
+    padding: 5% 10%;
+}
+
+.div-garantia-page > p {
+    text-align: center;
+}
+
+.div-garantia-page > ol > li {
+    margin-bottom: 40px;
+}
+
+.p-contenedor-listas-ul {
+    padding: 30px;
+    margin-top: 15px;
+}
+
+.p-contenedor-listas-ul li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .p-header-letters {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .div-mision-page, 
+    .div-vision-page {
+        flex-direction: column;
+        padding: 10% 5%;
+        text-align: center;
+    }
+
+    .div-mision-page img, 
+    .div-vision-page img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .div-vision-page {
+        flex-direction: column-reverse; 
+    }
+
+    .div-mision-page div, 
+    .div-vision-page div {
+        width: 100%;
+    }
+
+    .div-objetivos-page ol, 
+    .div-valores-page ol {
+        flex-direction: column;
+    }
+
+    .div-objetivos-page li,
+    .div-valores-page li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .p-contenedor-listas-ul {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    
+    .p-header-letters {
+        font-size: 32px;
+    }
+
+    .div-mision-page, 
+    .div-vision-page {
+        padding: 5%;
+        gap: 3%;
+    }
+
+    .div-mision-page img, 
+    .div-vision-page img {
+        width: 45%;
+    }
+
+    .div-mision-page div, 
+    .div-vision-page div {
+        width: 50%;
+    }
+
+    .div-objetivos-page li,
+    .div-valores-page li {
+        width: 45%; 
+    }
+
+    .p-sub-header-letters {
+        font-size: 20px;
+    }
+}
