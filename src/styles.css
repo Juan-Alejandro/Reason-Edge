@@ -266,9 +266,9 @@ html, body {
     flex-wrap: wrap;
 }
 
-/*.div-text-objetivos ol li:hover {
+.div-text-objetivos ol li:hover {
     color: rgb(106, 70, 239);
-}*/
+}
 
 .div-text-objetivos ol li p {
     font-size: 30px;
